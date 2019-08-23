@@ -1,0 +1,9 @@
+- hosts: vm 
+  tasks:
+     - name: copy setup file
+       copy: 
+          src: ~/gentoo-setup.sh  
+          dest: /tmp  
+          mode: 777
+     - name: run scripts
+       command: sh /tmp/gento-setup.sh
