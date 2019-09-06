@@ -63,7 +63,7 @@ Save and exit
 
 ### Test Ansible Connection
 ```
-ansible host1 -m ping 
+ansible gentoo -m ping 
 ```
 Output :
 ```
