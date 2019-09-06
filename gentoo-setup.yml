@@ -2,7 +2,7 @@
   tasks:
      - name: copy setup file
        copy: 
-          src: ~/gentoo-setup.sh  
+          src: ~/ansible-gentoo-setup/gentoo-setup.sh  
           dest: /tmp  
           mode: 777
      - name: run scripts
