@@ -40,9 +40,12 @@ or
 ```
 ### Copy ssh key from remote host
 Must the copy id-rsa.pub file.
+
 This file default location in your home directory in a .ssh (hidden) folder.
+
 Only connect with root because gentoo dont have any user yet. Before the copy key must the give the 
 password to root(use passwd command on gentoo) 
+
 Add the gentoo ip addres on this command
 
 ```
@@ -54,6 +57,7 @@ ssh-copy-id -i key-directory root@xx.xx.xx.xx
 nano /etc/ansible/hosts 
 ```
 Add this lines end  of the hosts file 
+
 User must be root and define gentoo ip addres
 ```
 [servers]
