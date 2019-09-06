@@ -65,5 +65,21 @@ Save and exit
 ```
 ansible host1 -m ping 
 ```
+Output :
+```
+gentoo | SUCCESS => {
+ “changed”: false,
+ “ping”: “pong”
+}
+gentoo | SUCCESS => {
+ “changed”: false,
+ “ping”: “pong”
+}
+```
+If you see this output, it is connected
 
-
+Now run .yml file with ansible-playbook
+```
+ansible-playbook gentoo-setup.yml
+```
+If you take any error check host and src line in gentoo-setup.yml file
