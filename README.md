@@ -48,6 +48,22 @@ Add the gentoo ip addres on this command
 ```
 ssh-copy-id -i key-directory root@xx.xx.xx.xx
 ```
+### Configure Ansible Host file 
 
+```
+nano /etc/ansible/hosts 
+```
+Add this lines end  of the hosts file 
+User must be root and define gentoo ip addres
+```
+[servers]
+gentoo ansible_ssh_host=xx.xx.xx.xx ansible_ssh_user=root
+```
+Save and exit
+
+### Test Ansible Connection
+```
+ansible host1 -m ping 
+```
 
 
