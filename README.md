@@ -84,6 +84,6 @@ If you see this output, it is connected
 
 Now run .yml file with ansible-playbook
 ```
-ansible-playbook gentoo-setup.yml
+ansible-playbook gentoo-setup.yml -b
 ```
 If you take any error check host and src line in gentoo-setup.yml file
